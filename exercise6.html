@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Layout</title>
+  <style>
+    #Bishrel {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    #Bishrel div {
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      #Bishrel {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      #Bishrel {
+        grid-template-columns: 100px 100px 100px ;
+        gap: 10px; 
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      #Bishrel {
+        grid-template-columns: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="Bishrel">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
