@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Flex</title>
+  <style>
+    .bishrel {
+      display: flex;
+      justify-content: center; 
+      height: 100ph;
+      gap: 20px;
+    }
+
+    .bagsh {
+      width: 100px;
+      height: 100px;
+      background-color:yellowgreen;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .bishrel {
+        flex-direction: column;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      .bagsh{
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bishrel">
+    <div class="bagsh"></div>
+    <div class="bagsh"></div>
+    <div class="bagsh"></div>
+  </div>
+</body>
+</html>
